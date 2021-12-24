@@ -6,7 +6,8 @@ Firedevs research efforts for Retail on-shelf product recognition && availabilit
 
 - [⌛️] Implement a Layer of recognition for simple position event ['not moved', 'appeared', 'disappeared'] records.
   - [✅️] prepare stage 1 train data
-  - [⌛] train stage 1 model
+  - [✅] train stage 1 model
+  - [⌛️] get the detection results in txt's and store the full video detections
 
 ### Completed Column ✓
 
