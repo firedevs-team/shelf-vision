@@ -30,3 +30,15 @@ def draw_bboxes(img, bboxes, color=(0, 255, 0)):
     for bbox in bboxes:
         img = draw_bbox(img, bbox, color)
     return img
+
+
+def txt2list(path):
+    """
+    convert txt file to list
+    """
+    with open(path, "r") as f:
+        lines = f.readlines()
+    return [
+        [int(l[0]), float(l[1]), float(l[2]), float(l[3]), float(l[4])]
+        for l in [l[:-1].split(" ") for l in lines]
+    ]
